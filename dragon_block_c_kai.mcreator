@@ -1,0 +1,783 @@
+{
+  "mod_elements": [
+    {
+      "name": "StatMenuOpen",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_menu_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/network/StatMenuOpenMessage.java"
+        ]
+      },
+      "path": "~/Player/Keybinds"
+    },
+    {
+      "name": "StatMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/world/inventory/StatMenuMenu.java",
+          "src/main/java/net/mcreator/dragonblockckai/network/StatMenuButtonMessage.java",
+          "src/main/java/net/mcreator/dragonblockckai/client/gui/StatMenuScreen.java"
+        ]
+      },
+      "path": "~/Player/StatMenuHandler"
+    },
+    {
+      "name": "StatMenuOpenOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_menu_open_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/StatMenuOpenOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler"
+    },
+    {
+      "name": "AttackDamageMelee",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_damage_melee",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/AttackDamageMeleeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player"
+    },
+    {
+      "name": "StatMenuOpenedGui",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stat_menu_opened_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/StatMenuOpenedGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler"
+    },
+    {
+      "name": "PlayerFlight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_flight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/PlayerFlightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player"
+    },
+    {
+      "name": "Flight",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/network/FlightMessage.java"
+        ]
+      },
+      "path": "~/Player/Keybinds"
+    },
+    {
+      "name": "StatushudDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "statushud_display_overlay_ingame",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/StatushudDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player"
+    },
+    {
+      "name": "Strengthdisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strengthdisplay",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/StrengthdisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "DisplaytrainingPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "displaytraining_points",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/DisplaytrainingPointsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "DisplayTotalMeleeDmg",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_total_melee_dmg",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/DisplayTotalMeleeDmgProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "StrengthAddfunctionality",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength_addfunctionality",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/StrengthAddfunctionalityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Button Functionality"
+    },
+    {
+      "name": "Gamehud",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamehud",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/client/screens/GamehudOverlay.java"
+        ]
+      },
+      "path": "~/Player/HudOverlay"
+    },
+    {
+      "name": "KivalueDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kivalue_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/KivalueDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/HudOverlay"
+    },
+    {
+      "name": "DexterityDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dexterity_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/DexterityDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "ConstitutionDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "constitution_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/ConstitutionDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "SpiritDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirit_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/SpiritDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "WillpowerDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "willpower_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/WillpowerDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "MindDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mind_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/MindDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "MaxHealthCalculation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_health_calculation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/MaxHealthCalculationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player"
+    },
+    {
+      "name": "ConstitutionAddFunction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "constitution_add_function",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/ConstitutionAddFunctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Button Functionality"
+    },
+    {
+      "name": "TrueDefenseCalc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_defense_calc",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/TrueDefenseCalcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "DisplayMaxHp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_max_hp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/DisplayMaxHpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Display Procedures"
+    },
+    {
+      "name": "CurrentHpDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_hp_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/CurrentHpDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/HudOverlay"
+    },
+    {
+      "name": "DefenseHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/DefenseHandlerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player"
+    },
+    {
+      "name": "DexterityAddFunction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dexterity_add_function",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/DexterityAddFunctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Button Functionality"
+    },
+    {
+      "name": "Setstat",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setstat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/command/SetstatCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "SetStatHandle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_stat_handle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/SetStatHandleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "Customizescreen",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "customizescreen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/client/gui/CustomizescreenScreen.java",
+          "src/main/java/net/mcreator/dragonblockckai/world/inventory/CustomizescreenMenu.java"
+        ]
+      },
+      "path": "~/Player/CustomizeGUI"
+    },
+    {
+      "name": "Initialization",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "initialization",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/InitializationProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Player/Init"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "isflying",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "dbckRace",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"minecraftsteve\""
+    },
+    {
+      "name": "stat_constitution",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "stat_dexterity",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "stat_mind",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "stat_spirit",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "stat_strength",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "stat_trainingpoints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "5000.0"
+    },
+    {
+      "name": "stat_upgradecost",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    },
+    {
+      "name": "stat_willpower",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "sys_healthbarFill",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "sys_kibarFill",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "var_current_ki",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "var_level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "var_levelcost",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    },
+    {
+      "name": "var_max_ki",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "var_currentHP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "var_maxHP",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "plr_hascustomized",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "key.dragon_block_c_kai.stat_menu_open": "Stat Menu Open",
+      "key.dragon_block_c_kai.flight": "Flight",
+      "gui.dragon_block_c_kai.stat_menu.test": "balls",
+      "gui.dragon_block_c_kai.stat_menu.label_strength_unloaded": "Strength: 0",
+      "key.categories.dragon_block_c_kai": "Dragon Block C: Kai",
+      "gui.dragon_block_c_kai.stat_menu.label_total_melee_damage": "Total Melee Damage: ",
+      "gui.dragon_block_c_kai.stat_menu.label_training_points_0": "Training Points: 0"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Player",
+        "children": [
+          {
+            "name": "Keybinds",
+            "children": []
+          },
+          {
+            "name": "StatMenuHandler",
+            "children": [
+              {
+                "name": "Display Procedures",
+                "children": []
+              },
+              {
+                "name": "Button Functionality",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "HudOverlay",
+            "children": []
+          },
+          {
+            "name": "Init",
+            "children": []
+          },
+          {
+            "name": "CustomizeGUI",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Commands",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "dragon_block_c_kai",
+    "modName": "Dragon Block C Kai",
+    "version": "0.0.1A",
+    "description": "Remake of the Dragon Block C Mod By a tired nerd fueled by tea and boredom",
+    "author": "Ari Akkre",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Credits to Jin and his brother Ben for the original mod.",
+    "modElementsPackage": "net.mcreator.dragonblockckai"
+  },
+  "mcreatorVersion": 202400232117
+}

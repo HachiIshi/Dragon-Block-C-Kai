@@ -1,0 +1,10 @@
+{
+  "_fv": 66,
+  "_type": "command",
+  "definition": {
+    "commandName": "dbcksetstat",
+    "type": "STANDARD",
+    "permissionLevel": "4",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"call_procedure\"><field name=\"procedure\"></field><next><block type=\"entity\"><field name=\"name\">players</field><field name=\"type\">players</field><statement name=\"args\"><block type=\"string\"><field name=\"type\">word</field><field name=\"name\">stat</field><statement name=\"args\"><block type=\"number_min_max\"><field name=\"name\">newvalue</field><field name=\"min\">1</field><field name=\"max\">999999999</field><comment pinned=\"false\" h=\"80\" w=\"160\">If the executed command contains a number parameter, we continue with this path and the procedure inside the number parameter block will be executed. As we can not give less than 0 item, we set the minimal value to 0 and the maximal to 6400 (10 stacks), like the Minecraft command.</comment><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SetStatHandle</field></block></statement><next><block type=\"call_procedure\"><field name=\"procedure\"></field><comment pinned=\"false\" h=\"80\" w=\"160\">If the executed command does not contain a number parameter, we will execute this procedure. When this case happens with the vanilla command, the gtame gives 1 item.</comment></block></next></block></statement><next><block type=\"call_procedure\"><field name=\"procedure\"></field><comment pinned=\"false\" h=\"80\" w=\"160\">When the command does not provide an item parameter, we execute another procedure to tell to the user there is a missing argument. If  nothing is done, Minecraft will simply return an error message.</comment></block></next></block></statement><next><block type=\"call_procedure\"><field name=\"procedure\"></field></block></next></block></next></block></next></block></xml>"
+  }
+}

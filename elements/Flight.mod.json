@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "F",
+    "keyBindingName": "Flight",
+    "keyBindingCategoryKey": "dragon_block_c_kai",
+    "onKeyPressed": {
+      "name": "PlayerFlight"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "kibaroutline.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 8,
+          "y": 11
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "kibarfill.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 8,
+          "y": 11
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_kivalue_display",
+          "text": {
+            "fixedValue": "",
+            "name": "KivalueDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 9,
+          "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_max_hp",
+          "text": {
+            "fixedValue": "",
+            "name": "CurrentHpDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 9,
+          "y": 65
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

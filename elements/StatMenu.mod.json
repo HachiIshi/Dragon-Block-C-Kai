@@ -1,0 +1,263 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 190,
+    "height": 100,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "smaller_teststatmenubg.png",
+          "use1Xscale": false,
+          "x": 24,
+          "y": -65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_training_points_0",
+          "text": {
+            "fixedValue": "Training Points: 0",
+            "name": "DisplaytrainingPoints"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 54,
+          "y": 49
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_strength_unloaded",
+          "text": {
+            "fixedValue": "Strength: 0",
+            "name": "Strengthdisplay"
+          },
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "x": 61,
+          "y": 74
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_total_melee_damage",
+          "text": {
+            "fixedValue": "Total Melee Damage: ",
+            "name": "DisplayTotalMeleeDmg"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 258,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stataddbutton",
+          "image": "stataddbutton.png",
+          "hoveredImage": "stataddbuttonhover.png",
+          "onClick": {
+            "name": "StrengthAddfunctionality"
+          },
+          "x": 177,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_dexterity_display",
+          "text": {
+            "fixedValue": "",
+            "name": "DexterityDisplay"
+          },
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "x": 60,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_constitution_display",
+          "text": {
+            "fixedValue": "",
+            "name": "ConstitutionDisplay"
+          },
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "x": 60,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_spirit_display",
+          "text": {
+            "fixedValue": "",
+            "name": "SpiritDisplay"
+          },
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "x": 60,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_willpower_display",
+          "text": {
+            "fixedValue": "",
+            "name": "WillpowerDisplay"
+          },
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "x": 60,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_mind_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MindDisplay"
+          },
+          "color": {
+            "value": -13261,
+            "falpha": 0.0
+          },
+          "x": 60,
+          "y": 161
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stataddbutton1",
+          "image": "stataddbutton.png",
+          "hoveredImage": "stataddbuttonhover.png",
+          "onClick": {
+            "name": "DexterityAddFunction"
+          },
+          "x": 177,
+          "y": 90
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stataddbutton2",
+          "image": "stataddbutton.png",
+          "hoveredImage": "stataddbuttonhover.png",
+          "onClick": {
+            "name": "ConstitutionAddFunction"
+          },
+          "x": 177,
+          "y": 108
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stataddbutton3",
+          "image": "stataddbutton.png",
+          "hoveredImage": "stataddbuttonhover.png",
+          "x": 177,
+          "y": 126
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stataddbutton4",
+          "image": "stataddbutton.png",
+          "hoveredImage": "stataddbuttonhover.png",
+          "x": 177,
+          "y": 144
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_stataddbutton5",
+          "image": "stataddbutton.png",
+          "hoveredImage": "stataddbuttonhover.png",
+          "x": 177,
+          "y": 162
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_max_hp",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayMaxHp"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 258,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_dexterity_display1",
+          "text": {
+            "fixedValue": "",
+            "name": "DexterityDisplay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 258,
+          "y": 90
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "StatMenuOpenedGui"
+    },
+    "gridSettings": {
+      "sx": 9,
+      "sy": 9,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
