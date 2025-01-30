@@ -4,7 +4,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.dragonblockckai.network.DragonBlockCKaiModVariables;
 
-public class StrengthAddfunctionalityProcedure {
+public class SpiritAddFunctionProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
@@ -19,9 +19,9 @@ public class StrengthAddfunctionalityProcedure {
 				});
 			}
 			{
-				double _setval = (entity.getCapability(DragonBlockCKaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DragonBlockCKaiModVariables.PlayerVariables())).stat_strength + 1;
+				double _setval = (entity.getCapability(DragonBlockCKaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DragonBlockCKaiModVariables.PlayerVariables())).stat_spirit + 1;
 				entity.getCapability(DragonBlockCKaiModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.stat_strength = _setval;
+					capability.stat_spirit = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

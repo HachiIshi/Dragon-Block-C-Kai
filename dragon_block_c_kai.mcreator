@@ -22,8 +22,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/dragonblockckai/world/inventory/StatMenuMenu.java",
-          "src/main/java/net/mcreator/dragonblockckai/network/StatMenuButtonMessage.java",
-          "src/main/java/net/mcreator/dragonblockckai/client/gui/StatMenuScreen.java"
+          "src/main/java/net/mcreator/dragonblockckai/client/gui/StatMenuScreen.java",
+          "src/main/java/net/mcreator/dragonblockckai/network/StatMenuButtonMessage.java"
         ]
       },
       "path": "~/Player/StatMenuHandler"
@@ -587,6 +587,75 @@
         "dependencies": []
       },
       "path": "~/Player/Init"
+    },
+    {
+      "name": "SpiritAddFunction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirit_add_function",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/SpiritAddFunctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Button Functionality"
+    },
+    {
+      "name": "MindAddFunction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mind_add_function",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/MindAddFunctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Button Functionality"
+    },
+    {
+      "name": "WillAddFunction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "will_add_function",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/WillAddFunctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/StatMenuHandler/Button Functionality"
+    },
+    {
+      "name": "VanillaOverlayHider",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "vanilla_overlay_hider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/VanillaOverlayHider.java"
+        ]
+      }
     }
   ],
   "variable_elements": [

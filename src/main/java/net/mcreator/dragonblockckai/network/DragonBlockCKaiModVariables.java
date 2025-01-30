@@ -185,8 +185,14 @@ public class DragonBlockCKaiModVariables {
 			return nbt;
 		}
 
-		public void readNBT(Tag Tag) {
-			CompoundTag nbt = (CompoundTag) Tag;
+		public void readNBT(Tag tag) {
+			if (tag == null) {
+				tag = writeNBT();
+			}
+			CompoundTag nbt = (CompoundTag) tag;
+			if (nbt == null) {
+				nbt = (CompoundTag) writeNBT();
+			}
 			isflying = nbt.getBoolean("isflying");
 			dbckRace = nbt.getString("dbckRace");
 			stat_constitution = nbt.getDouble("stat_constitution");
