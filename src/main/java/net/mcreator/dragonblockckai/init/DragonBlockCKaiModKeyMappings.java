@@ -16,6 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.dragonblockckai.network.StatMenuOpenMessage;
+import net.mcreator.dragonblockckai.network.KiChargeMessage;
 import net.mcreator.dragonblockckai.network.FlightMessage;
 import net.mcreator.dragonblockckai.DragonBlockCKaiMod;
 
@@ -47,11 +48,31 @@ public class DragonBlockCKaiModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping KI_CHARGE = new KeyMapping("key.dragon_block_c_kai.ki_charge", GLFW.GLFW_KEY_C, "key.categories.dragon_block_c_kai") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				DragonBlockCKaiMod.PACKET_HANDLER.sendToServer(new KiChargeMessage(0, 0));
+				KiChargeMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				KI_CHARGE_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - KI_CHARGE_LASTPRESS);
+				DragonBlockCKaiMod.PACKET_HANDLER.sendToServer(new KiChargeMessage(1, dt));
+				KiChargeMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+			}
+			isDownOld = isDown;
+		}
+	};
+	private static long KI_CHARGE_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(STAT_MENU_OPEN);
 		event.register(FLIGHT);
+		event.register(KI_CHARGE);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -61,6 +82,7 @@ public class DragonBlockCKaiModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				STAT_MENU_OPEN.consumeClick();
 				FLIGHT.consumeClick();
+				KI_CHARGE.consumeClick();
 			}
 		}
 	}

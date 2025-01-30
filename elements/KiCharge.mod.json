@@ -1,0 +1,15 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "C",
+    "keyBindingName": "Ki Charge",
+    "keyBindingCategoryKey": "dragon_block_c_kai",
+    "onKeyPressed": {
+      "name": "KichargeOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "KiChargeOnKeyReleased"
+    }
+  }
+}

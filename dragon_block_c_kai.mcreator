@@ -656,6 +656,95 @@
           "src/main/java/net/mcreator/dragonblockckai/VanillaOverlayHider.java"
         ]
       }
+    },
+    {
+      "name": "KichargeOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kicharge_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/KichargeOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/Keybinds"
+    },
+    {
+      "name": "KiChargeOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ki_charge_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/KiChargeOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player/Keybinds"
+    },
+    {
+      "name": "KiCharge",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ki_charge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/network/KiChargeMessage.java"
+        ]
+      },
+      "path": "~/Player/Keybinds"
+    },
+    {
+      "name": "KiChargeTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ki_charge_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/KiChargeTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player"
+    },
+    {
+      "name": "KiOver",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ki_over",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dragonblockckai/procedures/KiOverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player"
     }
   ],
   "variable_elements": [
@@ -772,6 +861,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "Ki_charge",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Ki_timer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -785,6 +886,7 @@
       "gui.dragon_block_c_kai.stat_menu.label_strength_unloaded": "Strength: 0",
       "key.categories.dragon_block_c_kai": "Dragon Block C: Kai",
       "gui.dragon_block_c_kai.stat_menu.label_total_melee_damage": "Total Melee Damage: ",
+      "key.dragon_block_c_kai.ki_charge": "Ki Charge",
       "gui.dragon_block_c_kai.stat_menu.label_training_points_0": "Training Points: 0"
     }
   },

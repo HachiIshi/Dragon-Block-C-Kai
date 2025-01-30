@@ -95,6 +95,8 @@ public class DragonBlockCKaiModVariables {
 			clone.var_currentHP = original.var_currentHP;
 			clone.var_maxHP = original.var_maxHP;
 			clone.plr_hascustomized = original.plr_hascustomized;
+			clone.Ki_charge = original.Ki_charge;
+			clone.Ki_timer = original.Ki_timer;
 			if (!event.isWasDeath()) {
 			}
 			if (!event.getEntity().level().isClientSide()) {
@@ -155,6 +157,8 @@ public class DragonBlockCKaiModVariables {
 		public double var_currentHP = 100.0;
 		public double var_maxHP = 100.0;
 		public boolean plr_hascustomized = false;
+		public boolean Ki_charge = false;
+		public double Ki_timer = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -182,6 +186,8 @@ public class DragonBlockCKaiModVariables {
 			nbt.putDouble("var_currentHP", var_currentHP);
 			nbt.putDouble("var_maxHP", var_maxHP);
 			nbt.putBoolean("plr_hascustomized", plr_hascustomized);
+			nbt.putBoolean("Ki_charge", Ki_charge);
+			nbt.putDouble("Ki_timer", Ki_timer);
 			return nbt;
 		}
 
@@ -212,6 +218,8 @@ public class DragonBlockCKaiModVariables {
 			var_currentHP = nbt.getDouble("var_currentHP");
 			var_maxHP = nbt.getDouble("var_maxHP");
 			plr_hascustomized = nbt.getBoolean("plr_hascustomized");
+			Ki_charge = nbt.getBoolean("Ki_charge");
+			Ki_timer = nbt.getDouble("Ki_timer");
 		}
 	}
 
@@ -264,6 +272,8 @@ public class DragonBlockCKaiModVariables {
 					variables.var_currentHP = message.data.var_currentHP;
 					variables.var_maxHP = message.data.var_maxHP;
 					variables.plr_hascustomized = message.data.plr_hascustomized;
+					variables.Ki_charge = message.data.Ki_charge;
+					variables.Ki_timer = message.data.Ki_timer;
 				}
 			});
 			context.setPacketHandled(true);
